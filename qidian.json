@@ -1,0 +1,10 @@
+{
+    "lives": [
+        { "name": "视频", "type": 1, "api": "https://live.fanmingming.com/tv/m3u/ipv6.m3u" },
+        { "name": "视频", "type": 1, "api": "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u" },
+        { "name": "音频", "type": 2, "api": "https://live.fanmingming.com/radio/m3u/fm.m3u" }
+    ],
+    "sites": [{书源1},{书源2},{影视源1},{音频源1},{漫画源1}...],
+    "js":"书源规则js库地址，app默认自带，如果这里有则读这里的库",
+    "webviewJs":"浏览器去广告js，app默认自带，如果这里有则读这里"
+}
