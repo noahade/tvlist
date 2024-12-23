@@ -44,12 +44,22 @@
       "playerType": "2",
       "searchable": true,
       "search": {
-      "url": "/vod/search/{{key}}",
-      "list": ".content-card > a",
-      "name": ".title.0@text",
-      "tips": ".bottom > div.0@text",
-      "detailUrl": "href"
+      "url": "/s----------.html?wd={{key}}",
+      "list": ".v_list .v_img",
+      "name": "a.0@title",
+      "tips": ".v_note@.text",
+      "coverUrl": "img.0@data-original",
+      "detailUrl": "a.0@href"
     },
+    "detail": {
+      "meta": ".v_info_box > p@text"
+    },
+    "play": {
+      "list": "li.current a",
+      "reverse": true,
+      "name": "text",
+      "url": "href"
+    }
       "ext": "http://api2.rinhome.com"
   },
   {
