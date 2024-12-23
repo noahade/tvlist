@@ -6,6 +6,8 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png" },
          { "name": "YanG", "type": 1, "api": "https://raw.githubusercontent.com/YanG-1989/m3u/refs/heads/main/Gather.m3u","epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png" },
+         { "name": "Gather", "type": 1, "api": "https://tv.iill.top/m3u/Gather","epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png" },
         { "name": "radio", "type": 2, "api": "https://live.fanmingming.com/radio/m3u/fm.m3u" }
     ],
     "sites": [
