@@ -39,7 +39,7 @@
   {
       "key": "荐片",
       "name": "🎬┃荐片┃影视",
-      "api": "csp_Jianpian",
+      "api": "http://api2.rinhome.com",
       "type": 2,
       "playerType": "2",
       "searchable": true,
