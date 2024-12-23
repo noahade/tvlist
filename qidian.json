@@ -42,6 +42,7 @@
       "api": "csp_Jianpian",
       "type": 2,
       "playerType": "2",
+      "searchable": true,
       "ext": "http://api2.rinhome.com"
   },
   {
