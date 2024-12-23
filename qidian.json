@@ -43,6 +43,13 @@
       "type": 2,
       "playerType": "2",
       "searchable": true,
+      "search": {
+      "url": "/vod/search/{{key}}",
+      "list": ".content-card > a",
+      "name": ".title.0@text",
+      "tips": ".bottom > div.0@text",
+      "detailUrl": "href"
+    },
       "ext": "http://api2.rinhome.com"
   },
   {
