@@ -159,6 +159,24 @@ http://110.53.52.63:8888/newlive/live/hls/51/live.m3u8
 http://114.104.171.233:20080/hls/98/index.m3u8
 #EXTINF:-1 tvg-name="CHC电影" tvg-id="CHC电影" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CHC电影.png" group-title="电影频道", CHC电影
 http://220.249.114.102:9901/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="好莱坞电影" tvg-id="好莱坞电影" tvg-logo="https://live.zbds.top/logo/好莱坞电影.png" group-title="电影频道", 好莱坞电影
+http://50.7.234.10:8278/hollywoodmovies_twn/playlist.m3u8?tid=MA8A4005638840056388&ct=18392&tsum=a1f1517d4ea64fd01267905f21d83859
+#EXTINF:-1 tvg-name="AMC电影" tvg-id="AMC电影" tvg-logo="https://live.zbds.top/logo/AMC电影.png" group-title="电影频道", AMC电影
+http://61.221.215.25:8800/hls/43/index.m3u8
+#EXTINF:-1 tvg-name="FanpopTV" tvg-id="FanpopTV" tvg-logo="https://live.zbds.top/logo/FanpopTV.png" group-title="电影频道", FanpopTV
+https://streaming-cl.sh1ny.space/memfs/e16d2f72-70b5-4bf5-b9c5-107b6390a10f.m3u8
+#EXTINF:-1 tvg-name="HBO家庭" tvg-id="HBO家庭" tvg-logo="https://live.zbds.top/logo/HBO家庭.png" group-title="电影频道", HBO家庭
+http://50.7.234.10:8278/fyi_twn/playlist.m3u8?tid=18186902&ct=17988&&tsum=7a21abab0a5912afb0ebc01db111e59f
+#EXTINF:-1 tvg-name="HITs电影" tvg-id="HITs电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/HITs电影.png" group-title="电影频道", HITs电影
+http://37.27.111.214:8080/live/28/hls.m3u8
+#EXTINF:-1 tvg-name="JapanimTV" tvg-id="JapanimTV" tvg-logo="https://live.zbds.top/logo/JapanimTV.png" group-title="电影频道", JapanimTV
+https://foxkidstv.be:3369/stream/play.m3u8
+#EXTINF:-1 tvg-name="iHOT爱院线" tvg-id="iHOT爱院线" tvg-logo="https://live.zbds.top/logo/iHOT爱院线.png" group-title="电影频道", iHOT爱院线
+http://livetv.wqwqwq.sbs/itv/6000000006000030630.m3u8?cdn=wasusyt
+#EXTINF:-1 tvg-name="贝爷求生影视2" tvg-id="贝爷求生影视2" tvg-logo="https://live.zbds.top/logo/贝爷求生影视2.png" group-title="电影频道", 贝爷求生影视2
+https://www.goodiptv.club/douyu/9661369
+#EXTINF:-1 tvg-name="老陈" tvg-id="老陈" tvg-logo="https://live.zbds.top/logo/贝爷求生影视2.png" group-title="电影频道", 阿川
+https://www.goodiptv.club/douyu/74960
 
 
 #EXTINF:-1 tvg-name="北京财经" tvg-logo="https://live.fanmingming.cn/tv/北京财经.png" group-title="北京频道",北京财经
