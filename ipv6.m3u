@@ -67,7 +67,7 @@ http://58.220.219.14:9901/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.cn/tv/湖南卫视.png" group-title="卫视频道",湖南卫视
 http://114.104.171.233:20080/hls/15/index.m3u8
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://live.fanmingming.cn/tv/浙江卫视.png" group-title="卫视频道",浙江卫视
-http://58.220.219.14:9901/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
+https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
 #EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://live.fanmingming.cn/tv/东方卫视.png" group-title="卫视频道",东方卫视
 http://221.226.4.10:9901/tsfile/live/1013_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.cn/tv/广东卫视.png" group-title="卫视频道",广东卫视
@@ -165,9 +165,11 @@ https://foxkidstv.be:3369/stream/play.m3u8
 http://livetv.wqwqwq.sbs/itv/6000000006000030630.m3u8?cdn=wasusyt
 #EXTINF:-1 tvg-name="贝爷求生影视2" tvg-id="贝爷求生影视2" tvg-logo="https://live.zbds.top/logo/贝爷求生影视2.png" group-title="电影频道", 贝爷求生影视2
 https://www.goodiptv.club/douyu/9661369
+
+#EXTINF:-1 tvg-name="老陈" tvg-id="老陈" tvg-logo="https://live.zbds.top/logo/贝爷求生影视2.png" group-title="电影频道", 阿川
+http://tc-tct.douyucdn2.cn/dyliveflv1a/74960rcOigKhKWCH_1024h.xs?wsAuth=94ffb3384c2d0307f3741b1d0872ca44&token=web-h5-38316551-74960-056d003988c84c33f8b4f762459dac84b8b3ed0b5316d803&logo=0&expire=0&did=a884578589cbf777f48425e900091501
 #EXTINF:-1 tvg-name="老陈" tvg-id="老陈" tvg-logo="https://live.zbds.top/logo/贝爷求生影视2.png" group-title="电影频道", 阿川
 https://www.goodiptv.club/douyu/74960
-
 
 #EXTINF:-1 tvg-name="北京财经" tvg-logo="https://live.fanmingming.cn/tv/北京财经.png" group-title="北京频道",北京财经
 http://otttv.bj.chinamobile.com/PLTV/88888888/224/3221226516/1.m3u8?GuardEncType=2&accountinfo=%7E%7EV2.0%7Eh9_SEkmWeMdS1TMnIILZgg%7E_eNUbgU9sJGUcVVduOMKhafLvQUgE_zlz_7pvDimJNPIiicEW7OIvk1s-X-PXHqO%2CEND
