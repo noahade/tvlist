@@ -42,49 +42,14 @@
       "meta": "#info@html"
     }
   },
-  {
-    "name": "📺厂长",
-    "api": "https://www.czzyvideo.com",
-    "type": 2,
-    "searchable": true,
-    "categories": [
-      { "name": "推荐", "url": "/movie_bt/page/{{page}}" },
-      { "name": "电视剧", "url": "/movie_bt/movie_bt_series/dianshiju/page/{{page}}" },
-      { "name": "电影", "url": "/movie_bt/movie_bt_series/dyy/page/{{page}}" },
-      { "name": "动漫", "url": "/movie_bt/movie_bt_series/dohua/page/{{page}}" },
-      { "name": "国产剧", "url": "/movie_bt/movie_bt_series/guochanju/page/{{page}}" },
-      { "name": "美剧", "url": "/movie_bt/movie_bt_series/mj/page/{{page}}" },
-      { "name": "韩剧", "url": "/movie_bt/movie_bt_series/hj/page/{{page}}" },
-      { "name": "华语电影", "url": "/movie_bt/movie_bt_series/huayudianying/page/{{page}}" },
-      { "name": "欧美电影", "url": "/movie_bt/movie_bt_series/meiguodianying/page/{{page}}" },
-      { "name": "印度电影", "url": "/movie_bt/movie_bt_series/yindudianying/page/{{page}}" }
-    ],
-    "search": {
-      "url": "/daoyongjiek0shibushiyoubing?q={{key}}",
-      "list": ".bt_img.mi_ne_kd li",
-      "name": "h3.0@text",
-      "tips": ".jidi.0@text",
-      "coverUrl": "img.0@data-original",
-      "detailUrl": "a.0@href"
-    },
-    "detail": {
-      "meta": ".moviedteail_list@html"
-    },
-    "play": {
-      "list": ".paly_list_btn a",
-      "name": "text",
-      "url": "href"
-    }
-  },
-  {
-   
+   {
     "name": "📺骚火",
     "api": "https://saohuo.tv",
     "type": 2,
     "searchable": false,
     "header": {
-      "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",
-      "Referer":"https://saohuo.tv"
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",
+        "Referer":"https://saohuo.tv"
     },
     "categories": [
       { "name": "电影", "url": "/list/1-{{page}}.html" },
@@ -131,61 +96,112 @@
     }
   },
   {
-    "name": "📺金牌",
-    "api": "https://www.hhduc.com",
+    "name": "🎬厂长",
+    "api": "https://www.czzyvideo.com",
     "type": 2,
     "searchable": true,
-    "discoverable": false,
+    "header": {
+      "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",
+      "Referer":"https://p.ananas.chaoxing.com"
+    },
+    "categories": [
+      { "name": "推荐", "url": "/movie_bt/page/{{page}}" },
+      { "name": "电视剧", "url": "/movie_bt/movie_bt_series/dianshiju/page/{{page}}" },
+      { "name": "电影", "url": "/movie_bt/movie_bt_series/dyy/page/{{page}}" },
+      { "name": "动漫", "url": "/movie_bt/movie_bt_series/dohua/page/{{page}}" },
+      { "name": "国产剧", "url": "/movie_bt/movie_bt_series/guochanju/page/{{page}}" },
+      { "name": "美剧", "url": "/movie_bt/movie_bt_series/mj/page/{{page}}" },
+      { "name": "韩剧", "url": "/movie_bt/movie_bt_series/hj/page/{{page}}" },
+      { "name": "华语电影", "url": "/movie_bt/movie_bt_series/huayudianying/page/{{page}}" },
+      { "name": "欧美电影", "url": "/movie_bt/movie_bt_series/meiguodianying/page/{{page}}" },
+      { "name": "印度电影", "url": "/movie_bt/movie_bt_series/yindudianying/page/{{page}}" }
+    ],
     "search": {
-      "url": "/vod/search/{{key}}",
-      "list": ".content-card > a",
-      "name": ".title.0@text",
-      "tips": ".bottom > div.0@text",
-      "detailUrl": "href"
+      "url": "/daoyongjiek0shibushiyoubing?q={{key}}",
+      "list": ".bt_img.mi_ne_kd li",
+      "name": "h3.0@text",
+      "tips": ".jidi.0@text",
+      "coverUrl": "img.0@data-original",
+      "detailUrl": "a.0@href"
     },
     "detail": {
-      "meta": ".director,.item-top@html"
+      "meta": ".moviedteail_list@html"
     },
     "play": {
-      "list": ".listitem a",
+      "list": ".paly_list_btn a",
       "name": "text",
       "url": "href"
     }
   },
   {
-    "name": "📺追剧",
-    "api": "https://zjuys.com",
+    "name": "📺金牌",
+    "api": "https://www.hellorlgzf7sn.com",
     "type": 2,
     "searchable": true,
-    "discoverable": false,
+    "categories": [
+      { "name": "电视剧", "url": "/vod/show/id/2/page/{{page}}" },
+      { "name": "电影", "url": "/vod/show/id/1/page/{{page}}" },
+      { "name": "动漫", "url": "/vod/show/id/4/page/{{page}}" },
+      { "name": "国产剧", "url": "/vod/show/id/2/type/14/page/{{page}}" },
+      { "name": "欧美剧", "url": "/vod/show/id/2/type/15/page/{{page}}" },
+      { "name": "港台剧", "url": "/vod/show/id/2/type/16/page/{{page}}" },
+      { "name": "日韩剧", "url": "/vod/show/id/2/type/62/page/{{page}}" },
+      { "name": "其它剧", "url": "/vod/show/id/2/type/68/page/{{page}}" },
+      { "name": "喜剧", "url": "/vod/show/id/1/type/22/page/{{page}}" },
+      { "name": "动作", "url": "/vod/show/id/1/type/23/page/{{page}}" },
+      { "name": "科幻", "url": "/vod/show/id/1/type/30/page/{{page}}" },
+      { "name": "爱情", "url": "/vod/show/id/1/type/26/page/{{page}}" },
+      { "name": "悬疑", "url": "/vod/show/id/1/type/27/page/{{page}}" },
+      { "name": "恐怖", "url": "/vod/show/id/1/type/36/page/{{page}}" },
+      { "name": "惊悚", "url": "/vod/show/id/1/type/34/page/{{page}}" },
+      { "name": "动画", "url": "/vod/show/id/1/type/33/page/{{page}}" },
+      { "name": "灾难", "url": "/vod/show/id/1/type/81/page/{{page}}" },
+      { "name": "剧情", "url": "/vod/show/id/1/type/37/page/{{page}}" }
+    ],
     "search": {
       "url": "/vod/search/{{key}}",
-      "list": ".content-card > a",
-      "name": ".title.0@text",
-      "tips": ".bottom > div.0@text",
-      "detailUrl": "href"
+      "list": "body@js:function getSearchList(html) { var a = substring(html, '\\\"result\\\":', 11, ']}', 1); a = substring(a, '\\\"list\\\":', 7); return a; } getSearchList(__result);",
+      "name": "$.vodName",
+      "tips": "$.vodRemarks",
+      "coverUrl": "$.vodPic",
+      "detailUrl": "/detail/{{$.vodId}}",
+      "rate": "$.vodDoubanScore"
     },
     "detail": {
       "meta": ".director,.item-top@html"
     },
-    "play": {
-      "list": ".listitem a",
-      "name": "text",
-      "url": "href"
+    "list": {
+      "list": "body@js:substring(__result,'\\\"list\\\":',7,']}',1);",
+      "name": "$.vodName",
+      "tips": "$.vodRemarks",
+      "coverUrl": "$.vodPic",
+      "detailUrl": "/detail/{{$.vodId}}",
+      "rate": "$.vodDoubanScore"
+    },
+    "toc": {
+      "list": "body@js:function getPlayList(html) { var vodId = substring(html,'\\\"vodId\\\":',8,','); var script = substring(html,'episodeList',13,']',1); script = script.replaceAll('null',vodId); return script; }; getPlayList(__result)",
+      "name": "name",
+      "url": "/vod/play/{{$.playUrl}}/1/{{$.nid}}"
     }
   },
   {
     "name": "📺奇优",
     "type": 2,
     "api": "http://www.qiyoudy4.com",
-    "categories": [       
-        { "url": "/list/1_{{page}}.html", "name": "电影" },
-        { "url": "/list/2_{{page}}.html", "name": "电视剧" },
-        { "url": "/list/3_{{page}}.html", "name": "动漫" },
-        { "url": "/list/4_{{page}}.html", "name": "综艺" }
+    "header": {
+      "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1"
+    },
+    "injectJs": {
+      "start": "Object.defineProperty(window.navigator, 'platform', {value: 'iPhone', writable: false});"
+    },
+    "categories": [
+      { "url": "/list/1_{{page}}.html", "name": "电影" },
+      { "url": "/list/2_{{page}}.html", "name": "电视剧" },
+      { "url": "/list/3_{{page}}.html", "name": "动漫" },
+      { "url": "/list/4_{{page}}.html", "name": "综艺" }
     ],
     "detail": {
-      "intro":".detail-content@text",
+      "intro": ".detail-content@text",
       "author": ".data5 a.0@text",
       "category": ".data2.0@text"
     },
@@ -194,30 +210,130 @@
       "name": "title",
       "detailUrl": "href",
       "coverUrl": "data-original",
-      "tips":".pic-text@text",
+      "tips": ".pic-text@text",
       "url": "/search.php?searchword={{key}}"
     },
-    "toc": {
+    "play": {
       "list": ".stui-content__playlist.0@a",
       "name": "text",
-      "url":"href"
+      "url": "href"
     },
     "searchable": true,
     "discoverable": true
   },
-  { "name": "📺豪华", "api": "https://hhzyapi.com/api.php/provide/vod/from/hhm3u8" },
-  { "name": "📺黑木耳", "api": "https://json.heimuer.tv/api.php/provide/vod/" },
-  { "name": "📺光速", "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8/" },
-  { "name": "📺魔都", "api": "https://caiji.moduapi.cc/api.php/provide/vod/from/modum3u8/" },
-  { "name": "📺卧龙", "api": "https://collect.wolongzyw.com/api.php/provide/vod/" },
-  { "name": "📺iKun", "api": "https://ikunzy.vip/api.php/provide/vod/from/ikm3u8/" },
-  { "name": "📺非凡", "api": "https://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/" },
-  { "name": "📺量子", "api": "https://cj.lziapi.com/api.php/provide/vod/", "searchable": false },
-  { "name": "📺红牛", "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/", "searchable": false },
-  { "name": "📺快看", "api": "https://kuaikan-api.com/api.php/provide/vod/from/kuaikan/", "searchable": false },
-  { "name": "📺暴风", "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8/", "searchable": false },
-  { "name": "📺快车", "api": "https://caiji.kczyapi.com/api.php/provide/vod/from/kcm3u8/", "searchable": false },
-  { "name": "📺新浪", "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/from/xlm3u8/", "searchable": false },
+  {
+    "name": "📺旺旺",
+    "type": 2,
+    "api": "https://www.wwgz.cn",
+    "header": {
+      "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1"
+    },
+    "categories": [
+      { "url": "/vod-list-id-1-pg-{{page}}-order--by-time-class-0-year-0-letter--area--lang-.html", "name": "电影" },
+      { "url": "/vod-list-id-2-pg-{{page}}-order--by-time-class-0-year-0-letter--area--lang-.html", "name": "电视剧" },
+      { "url": "/vod-list-id-4-pg-{{page}}-order--by-time-class-0-year-0-letter--area--lang-.html", "name": "动漫" },
+      { "url": "/vod-list-id-3-pg-{{page}}-order--by-time-class-0-year-0-letter--area--lang-.html", "name": "综艺" },
+      { "url": "/vod-list-id-26-pg-{{page}}-order--by-time-class-0-year-0-letter--area--lang-.html", "name": "短剧" }
+    ],
+    "detail": {
+      "meta": ".desc_item!0@html"
+    },
+    "list": {
+      "list": "ul.resize_list a",
+      "name": "title",
+      "detailUrl": "href",
+      "coverUrl": "img.0@data-echo",
+      "tips": ".sBottom span.0@content@js:result.split('<em>')[0]"
+    },
+    "search":{
+      "url":"/index.php?m=vod-search",
+      "method":"POST",
+      "post":"wd={{key}}",
+      "list": "#data_list li",
+      "name": ".sTit.0@text",
+      "detailUrl": "a.0@href",
+      "coverUrl": "img.0@data-src"
+    },
+    "play": {
+      "list": "#wwbfq a",
+      "name": "text",
+      "url": "href",
+      "reverse": true
+    },
+    "searchable": true,
+    "discoverable": true
+  },  
+  {
+    "name": "📺动漫巴士",
+    "api": "https://dm84.tv",
+    "type": 2,
+    "searchable": true,
+    "categories": [
+      { "name": "电影", "url": "/list-4-{{page}}.html" },
+      { "name": "国产动漫", "url": "/list-1-{{page}}.html" },
+      { "name": "日本动漫", "url": "/list-2-{{page}}.html" },
+      { "name": "欧美动漫", "url": "/list-3-{{page}}.html" }
+    ],
+    "search": {
+      "url": "/s----------.html?wd={{key}}",
+      "list": ".v_list .item",
+      "name": "a.1@text",
+      "tips": "span.0@text",
+      "coverUrl": "a.0@data-bg",
+      "detailUrl": "a.0@href"
+    },
+    "detail": {
+      "meta": "#intro@html"
+    },
+    "play": {
+      "list": ".play_list.current a",
+      "name": "text",
+      "url": "href"
+    }
+  },
+  {
+    "name": "📺蓝莓短剧",
+    "type": 2,
+    "api": "https://app.whjzjx.cn",
+    "searchable": true,
+    "login": {
+      "url": "https://app.whjzjx.cn/v1/account/login",
+      "method": "POST",
+      "post": "device=20caaae96b3443174bf4ebdbdcc253776",
+      "authorization": "$.data.token"
+    },
+    "header": {
+      "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzU5ODE1NzAsIlVzZXJJZCI6MTc3Njk4NjcsInJlZ2lzdGVyX3RpbWUiOiIyMDI0LTAxLTEzIDE3OjQyOjE3IiwiaXNfbW9iaWxlX2JpbmQiOmZhbHNlfQ.018l26WVv16xWvaRYhyKkY1zxTXqNDsb3nKnl5HVz7E"
+    },
+    "categories": [
+      { "name": "古装", "url": "/v1/theater/home_page?theater_class_id=0&page_num={{page-1}}&page_size=24" },
+      { "name": "穿越", "url": "/v1/theater/home_page?theater_class_id=1&page_num={{page-1}}&page_size=24" },
+      { "name": "逆袭", "url": "/v1/theater/home_page?theater_class_id=2&page_num={{page-1}}&page_size=24" },
+      { "name": "重生", "url": "/v1/theater/home_page?theater_class_id=3&page_num={{page-1}}&page_size=24" }
+    ],
+    "search": {
+      "url": "/v2/search",
+      "method": "POST",
+      "post": "text={{key}}",
+      "list": "$.data.search_data",
+      "name": "$.title",
+      "tips": "{{$.current_num}}/{{$.total}}",
+      "coverUrl": "$.cover_url",
+      "detailUrl": "https://app.whjzjx.cn/v2/theater_parent/detail?theater_parent_id={{$.id}}"
+    },
+    "list": {
+      "list": "$.data.list",
+      "name": "$.theater.title",
+      "tips": "{{$.theater.current_num}}/{{$.theater.total}}",
+      "coverUrl": "$.theater.cover_url",
+      "detailUrl": "https://app.whjzjx.cn/v2/theater_parent/detail?theater_parent_id={{$.theater.id}}"
+    },
+    "play": {
+      "list": "$.data.theaters",
+      "name": "$.num",
+      "url": "$.son_video_url"
+    }
+  },
   {
     "name": "📙猫眼看书",
     "type": 10,
