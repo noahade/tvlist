@@ -334,7 +334,7 @@
       "url": "$.son_video_url"
     }
   },
-  {
+   {
     "name": "📙猫眼看书",
     "type": 10,
     "api": "http://api.lemiyigou.com",
@@ -470,6 +470,53 @@
     "discoverable": true
   },
   {
+    "name": "📙乐阅读",
+    "type": 10,
+    "api": "https://www.22is.com",
+    "categories": [
+      { "name": "玄幻小说", "url": "/sort/1/{{page}}.html" },
+      { "name": "都市小说", "url": "/sort/2/{{page}}.html" },
+      { "name": "历史小说", "url": "/sort/3/{{page}}.html" },
+      { "name": "科幻小说", "url": "/sort/4/{{page}}.html" },
+      { "name": "悬疑小说", "url": "/sort/5/{{page}}.html" },
+      { "name": "网游小说", "url": "/sort/6/{{page}}.html" },
+      { "name": "穿越小说", "url": "/sort/7/{{page}}.html" },
+      { "name": "现代言情", "url": "/sort/15/{{page}}.html" },
+      { "name": "古代言情", "url": "/sort/16/{{page}}.html" },
+      { "name": "豪门总裁", "url": "/sort/17/{{page}}.html" },
+      { "name": "青春校园", "url": "/sort/18/{{page}}.html" },
+      { "name": "其他类别", "url": "/sort/8/{{page}}.html" },
+      { "name": "总排行榜", "url": "/rank/allvisit/" },
+      { "name": "月排行榜", "url": "/rank/monthvisit/" },
+      { "name": "周排行榜", "url": "/rank/weekvisit/" },
+      { "name": "收藏榜单", "url": "/rank/goodnum/" }
+    ],
+    "detail": {
+      "tocUrl": "text.完整目录@href",
+      "intro": "head > meta[property=\"og:description\"]@content",
+      "category": "head > meta[name=\"og:novel:category\"]@content",
+      "tips": "head > meta[name=\"og:novel:latest_chapter_name\"]@content"
+    },
+    "content": {
+      "content": ".txtnav p@text##网站地址统一.*阅读记录可.*抱歉....|使用默认浏览.*添加到主屏幕哦~"
+    },
+    "search": {
+      "list": ".newbox@li||id.article_list_content@li",
+      "name": "h3@text",
+      "author": ".labelbox label.0@text",
+      "detailUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "url": "/search/",
+      "method": "POST",
+      "post": "searchkey={{key}}&searchtype=all"
+    },
+    "toc": {
+      "list": "#chapterList a",
+      "name": "text",
+      "url": "href"
+    }
+  },
+  {
     "name": "📙顶点小说",
     "type": 10,
     "api": "http://m.23uswx.org",
@@ -506,6 +553,110 @@
       "list": "#chapterlist a!0",
       "name": "text",
       "url": "href"
+    },
+    "searchable": true,
+    "discoverable": true
+  },
+ {
+    "name": "🎨包子漫画",
+    "type": 12,
+    "api": "https://cn.czmanga.com",
+    "categories": [
+      { "name": "推荐", "url": "/classify" },
+      { "name": "国漫", "url": "/classify?type=all&region=cn&state=all" },
+      { "name": "日本", "url": "/classify?type=all&region=jp&state=all" },
+      { "name": "韩国", "url": "/classify?type=all&region=kr&state=all" },
+      { "name": "欧美", "url": "/classify?type=all&region=en&state=all" }
+    ],
+    "detail": {
+      "intro": ".comics-detail__desc.0@text",
+      "category": "head > meta[name=\"og:novel:category\"]@content",
+      "tips": "head > meta[name=\"og:novel:latest_chapter_name\"]@content"
+    },
+    "content": {
+      "content": ".comic-contain amp-img@src"
+    },
+    "search": {
+      "list": ".comics-card",
+      "name": "a.0@title",
+      "author": "small.text-truncate.0@text",
+      "detailUrl": "a.0@href",
+      "coverUrl": "amp-img.0@src",
+      "url": "/search?q={{key}}"
+    },
+    "toc": {
+      "list": "#chapter-items a,#chapters_other_list a",
+      "name": "text",
+      "url": "href"
+    },
+    "searchable": true,
+    "discoverable": true
+  },
+  {
+    "name": "🎨动漫之家",
+    "type": 12,
+    "api": "https://www.idmzj.com/api/v1",
+    "key": "www.idmzj.com",
+    "categories": [
+      { "name": "更新", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=0" },
+      { "name": "人气", "url": "/comic1/filter?sortType=1&page={{page}}&size=20&audience=0&theme=0" },
+      { "name": "少年", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=3262&theme=0" },
+      { "name": "少女", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=3263&theme=0" },
+      { "name": "青年", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=3264&theme=0" },
+      { "name": "冒险", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=1" },
+      { "name": "搞笑", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=2" },
+      { "name": "格斗", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=3" },
+      { "name": "科幻", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=4" },
+      { "name": "爱情", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=5" },
+      { "name": "侦探", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=6" },
+      { "name": "竞技", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=7" },
+      { "name": "魔法", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=8" },
+      { "name": "校园", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=9" },
+      { "name": "百合", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=11" },
+      { "name": "耽美", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=13" },
+      { "name": "历史", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=14" },
+      { "name": "战争", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=15" },
+      { "name": "宅系", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=16" },
+      { "name": "治愈", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=17" },
+      { "name": "仙侠", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=18" },
+      { "name": "武侠", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=19" },
+      { "name": "职场", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=20" },
+      { "name": "神鬼", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=21" },
+      { "name": "奇幻", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=22" },
+      { "name": "生活", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=23" },
+      { "name": "其它", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=24" }
+    ],
+    "detail": {
+      "intro": "$.data.comicInfo.description",
+      "category": "{{$.data.comicInfo.status}}/{{$.data.comicInfo.types}}"
+    },
+    "content": {
+      "content": "$.page"
+    },
+    "list": {
+      "list": "$.data.comicList[*]",
+      "name": "$.name",
+      "author": "$.authors",
+      "detailUrl": "/comic1/comic/detail?app_name=dmzj&comic_py={{$.comic_py}}",
+      "coverUrl": "$.cover",
+      "tips": "$.last_update_chapter_name",
+      "params": "{\"comic_id\":{{$.id}}}"
+    },
+    "search": {
+      "list": "$",
+      "name": "$.title",
+      "author": "$.authors",
+      "detailUrl": "/comic1/comic/detail?app_name=dmzj&comic_py={{$.comic_py}}",
+      "coverUrl": "$.cover",
+      "url": "https://www.idmzj.com/npi/search/fuzzyWithLevel/0/{{key}}.json?type=0&con={{key}}",
+      "tips": "$.last_name",
+      "params": "{\"comic_id\":{{$.id}}}"
+    },
+    "toc": {
+      "list": "$.data.comicInfo.chapterList[0].data",
+      "name": "$.chapter_title",
+      "reverse":true,
+      "url": "http://api.dmzj.com/dynamic/comicread/{{$.comic_id}}/{{$.chapter_id}}.json"
     },
     "searchable": true,
     "discoverable": true
@@ -557,73 +708,50 @@
     }
   },
   {
-    "name": "🎨动漫之家",
+    "name": "🎨漫画大全",
+    "remark": "1.0.8",
     "type": 12,
-    "api": "https://www.idmzj.com/api/v1",
-    "key": "www.idmzj.com",
-    "categories": [
-      { "name": "更新", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=0" },
-      { "name": "人气", "url": "/comic1/filter?sortType=1&page={{page}}&size=20&audience=0&theme=0" },
-      { "name": "少年", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=3262&theme=0" },
-      { "name": "少女", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=3263&theme=0" },
-      { "name": "青年", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=3264&theme=0" },
-      { "name": "冒险", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=1" },
-      { "name": "搞笑", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=2" },
-      { "name": "格斗", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=3" },
-      { "name": "科幻", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=4" },
-      { "name": "爱情", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=5" },
-      { "name": "侦探", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=6" },
-      { "name": "竞技", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=7" },
-      { "name": "魔法", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=8" },
-      { "name": "校园", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=9" },
-      { "name": "百合", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=11" },
-      { "name": "耽美", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=13" },
-      { "name": "历史", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=14" },
-      { "name": "战争", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=15" },
-      { "name": "宅系", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=16" },
-      { "name": "治愈", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=17" },
-      { "name": "仙侠", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=18" },
-      { "name": "武侠", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=19" },
-      { "name": "职场", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=20" },
-      { "name": "神鬼", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=21" },
-      { "name": "奇幻", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=22" },
-      { "name": "生活", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=23" },
-      { "name": "其它", "url": "/comic1/filter?sortType=0&page={{page}}&size=20&audience=0&theme=24" }
-    ],
+    "api": "http://android.007ting.com",
+    "category": {
+      "url": "",
+      "method": "POST",
+      "post": "",
+      "params": {
+        "area": [],
+        "year": [],
+        "category": []
+      }
+    },
     "detail": {
-      "intro": "$.data.comicInfo.description",
-      "category": "{{$.data.comicInfo.status}}/{{$.data.comicInfo.types}}"
+      "url": "/android_rest.action",
+      "method": "POST",
+      "post": "type=product&userId=0&id={{$.comicId}}",
+      "intro": "$.desc",
+      "author": "$.comicAuthor"
     },
     "content": {
-      "content": "$.page"
-    },
-    "list": {
-      "list": "$.data.comicList[*]",
-      "name": "$.name",
-      "author": "$.authors",
-      "detailUrl": "/comic1/comic/detail?app_name=dmzj&comic_py={{$.comic_py}}",
-      "coverUrl": "$.cover",
-      "tips":"$.last_update_chapter_name",
-      "params": "{\"comic_id\":{{$.id}}}"
+      "url": "/android_rest.action",
+      "method": "POST",
+      "post": "@js:'chapterId={{$.partId}}&videoSign='+ md5('-{{$.comicId}}-{{$.partId}}-TcbmGhl247Bc-Rd-android')+'&id={{$.comicId}}&type=imagesList'",
+      "content": "$.imagesList[*].imageURL"
     },
     "search": {
-      "list": "$",
+      "url": "/android_rest.action",
+      "method": "POST",
+      "post": "type=search&userId=0&word={{key}}",
+      "list": "$.searchList",
       "name": "$.title",
-      "author": "$.authors",
-      "detailUrl": "/comic1/comic/detail?app_name=dmzj&comic_py={{$.comic_py}}",
-      "coverUrl": "$.cover",
-      "url": "https://www.idmzj.com/npi/search/fuzzyWithLevel/0/{{key}}.json?type=0&con={{key}}",
-      "tips":"$.last_name",
-      "params": "{\"comic_id\":{{$.id}}}"
+      "tips": "$.updateMsg",
+      "coverUrl": "$.imageURL",
+      "params": "{\"comicId\":{{$.comicId}}}"
     },
     "toc": {
-      "list": "$.data.comicInfo.chapterList[0].data",
-      "name": "$.chapter_title",
-      "reverse":true,
-      "url": "http://api.dmzj.com/dynamic/comicread/{{$.comic_id}}/{{$.chapter_id}}.json"
+      "list": "$.chapterList",
+      "name": "$.partName",
+      "params": "{\"comicId\":{{$.comicId}},\"partId\":{{$.partId}}}"
     },
     "searchable": true,
-    "discoverable": true
+    "discoverable": false
   },  
   {
     "name": "🎧老白故事",
@@ -682,17 +810,62 @@
     "searchable": true,
     "discoverable": true
   },
-        {"name":"小秋音乐",
-            "type": 11,
-            "api":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/Huibq/keep-alive/master/Music_Free/xiaoqiu.js",
-            "url":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/Huibq/keep-alive/master/Music_Free/xiaoqiu.js","version":"0.3.0"},
+  {
+    "name": "🎧人人听",
+    "type": 11,
+    "api": "https://api.yituwenhua.com",
+    "header": {
+          "Referer": "https://renrenting.leytolyy.wwww",
+          "User-Agent": "renrenting.leytolyy/1.2 (Mozilla/5.0 (Linux; Android 9; MIX 2S Build/PKQ1.180729.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36)"
+        },
+    "categories": [
+      { "url": "/api/json/v1/MultiSearch?fromLy=tag&apiLy=xmly&pageNum={{page}}&pageSize=30&keyword=百家讲坛", "name": "百家讲坛" },
+      { "url": "/api/json/v1/MultiSearch?fromLy=tag&apiLy=xmly&pageNum={{page}}&pageSize=30&keyword=有声书", "name": "有声书" },
+      { "url": "/api/json/v1/MultiSearch?fromLy=tag&apiLy=xmly&pageNum={{page}}&pageSize=30&keyword=历史", "name": "历史" },
+      { "url": "/api/json/v1/MultiSearch?fromLy=tag&apiLy=xmly&pageNum={{page}}&pageSize=30&keyword=评书", "name": "评书" },
+      { "url": "/api/json/v1/MultiSearch?fromLy=tag&apiLy=xmly&pageNum={{page}}&pageSize=30&keyword=小说", "name": "小说" },
+      { "url": "/api/json/v1/MultiSearch?fromLy=tag&apiLy=xmly&pageNum={{page}}&pageSize=30&keyword=音乐", "name": "音乐" },
+      { "url": "/api/json/v1/MultiSearch?fromLy=tag&apiLy=xmly&pageNum={{page}}&pageSize=30&keyword=个人成长", "name": "个人成长" },
+      { "url": "/api/json/v1/MultiSearch?fromLy=tag&apiLy=xmly&pageNum={{page}}&pageSize=30&keyword=健康养生", "name": "健康养生" }
+    ],
+    "detail": {
+    
+    },
+    "search": {
+      "list": "$.data",
+      "name": "$.novelName",
+      "detailUrl": "/api/json/v1/albums_browse_search?album_id={{$.novelId}}",
+      "coverUrl": "$.coverImageUrl",
+      "tips": "$.latestChapter",
+      "author":"$.author",
+      "category": "$.categoryName",
+      "intro": "$.description",
+      "url": "/api/json/v1/MultiSearch?fromLy=title&apiLy=xmly&pageNum=1&pageSize=30&keyword={{key}}"
+    },
+    "toc": {
+      "list": "$.data",
+      "name": "$.chapterName",
+      "playUrl": "$.playUrl"
+    },
+    "searchable": true,
+    "discoverable": true
+  },
   {
     "name": "🎧好听音乐",
     "type": 11,
     "api": "http://m.htqyy.com",
     "categories": [
       { "url": "/album", "name": "热门" },
-      { "url": "/album/index/1", "name": "纯音乐" }
+      { "url": "/album/index/1", "name": "纯音乐" },
+      { "url": "/album/index/2", "name": "新世纪" },
+      { "url": "/album/index/3", "name": "钢琴曲" },
+      { "url": "/album/index/4", "name": "减压放松" },
+      { "url": "/album/index/5", "name": "中国音乐" },
+      { "url": "/album/index/6", "name": "天籁之音" },
+      { "url": "/album/index/7", "name": "影视原声" },
+      { "url": "/album/index/8", "name": "电子乐" },
+      { "url": "/album/index/9", "name": "背景音乐" },
+      { "url": "/album/index/11", "name": "流行金曲" }
     ],
     "detail": {},
     "search": {
@@ -711,7 +884,47 @@
     },
     "searchable": true,
     "discoverable": true
-  }  
+  },
+  {
+    "name": "🎧天天评书",
+    "type": 11,
+    "api": "https://tthdy.cc",
+    "categories": [
+      { "url": "/tt/8-{{page}}.html", "name": "百家讲坛" },
+      { "url": "/tt/1-{{page}}.html", "name": "言情" },
+      { "url": "/tt/2-{{page}}.html", "name": "武侠" },
+      { "url": "/tt/3-{{page}}.html", "name": "悬疑" },
+      { "url": "/tt/4-{{page}}.html", "name": "历史" },
+      { "url": "/tt/5-{{page}}.html", "name": "军事" },
+      { "url": "/tt/6-{{page}}.html", "name": "评书" },
+      { "url": "/tt/7-{{page}}.html", "name": "相声小品" },
+      { "url": "/tt/9-{{page}}.html", "name": "商业财经" },
+      { "url": "/tt/10-{{page}}.html", "name": "健康养生" }
+    ],
+    "detail": {
+      "intro": ".detail-content@text",
+      "author": ".data5 a.0@text",
+      "category": ".data2.0@text"
+    },
+    "search": {
+      "list": ".stui-vodlist .stui-vodlist__thumb",
+      "name": "title",
+      "detailUrl": "href",
+      "coverUrl": "data-original",
+      "tips": ".pic-text@text",
+      "url": "/search.php?searchword={{key}}"
+    },
+    "toc": {
+      "list": ".stui-content__playlist a",
+      "name": "text",
+      "url": "href"
+    },
+    "content": {
+      "content": ".stui-player__video script.0@text@js:eval(result); now;"
+    },
+    "searchable": true,
+    "discoverable": true
+  }
 ],
     "js":"书源规则js库地址，app默认自带，如果这里有则读这里的库",
     "webviewJs":"浏览器去广告js，app默认自带，如果这里有则读这里"
