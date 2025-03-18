@@ -43,32 +43,6 @@
     }
   },
   {
-      "key": "荐片",
-      "name": "🎬┃荐片┃影视",
-      "api": "http://api2.rinhome.com",
-      "type": 2,
-      "playerType": "2",
-      "searchable": true,
-      "search": {
-      "url": "/s----------.html?wd={{key}}",
-      "list": ".v_list .v_img",
-      "name": "a.0@title",
-      "tips": ".v_note@.text",
-      "coverUrl": "img.0@data-original",
-      "detailUrl": "a.0@href"
-    },
-    "detail": {
-      "meta": ".v_info_box > p@text"
-    },
-    "play": {
-      "list": "li.current a",
-      "reverse": true,
-      "name": "text",
-      "url": "href"
-    },
-      "ext": "http://api2.rinhome.com"
-  },
-  {
     "name": "📺厂长",
     "api": "https://www.czzyvideo.com",
     "type": 2,
@@ -103,10 +77,15 @@
     }
   },
   {
+   
     "name": "📺骚火",
     "api": "https://saohuo.tv",
     "type": 2,
     "searchable": false,
+    "header": {
+      "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",
+      "Referer":"https://saohuo.tv"
+    },
     "categories": [
       { "name": "电影", "url": "/list/1-{{page}}.html" },
       { "name": "电视剧", "url": "/list/2-{{page}}.html" },
