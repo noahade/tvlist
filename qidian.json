@@ -97,7 +97,7 @@
   },
   {
     "name": "🎬厂长",
-    "api": "https://www.czzyvideo.com",
+    "api": "https://www.cz0101.com",
     "type": 2,
     "searchable": true,
     "header": {
@@ -105,19 +105,14 @@
       "Referer":"https://p.ananas.chaoxing.com"
     },
     "categories": [
-      { "name": "推荐", "url": "/movie_bt/page/{{page}}" },
-      { "name": "电视剧", "url": "/movie_bt/movie_bt_series/dianshiju/page/{{page}}" },
-      { "name": "电影", "url": "/movie_bt/movie_bt_series/dyy/page/{{page}}" },
-      { "name": "动漫", "url": "/movie_bt/movie_bt_series/dohua/page/{{page}}" },
-      { "name": "国产剧", "url": "/movie_bt/movie_bt_series/guochanju/page/{{page}}" },
-      { "name": "美剧", "url": "/movie_bt/movie_bt_series/mj/page/{{page}}" },
-      { "name": "韩剧", "url": "/movie_bt/movie_bt_series/hj/page/{{page}}" },
-      { "name": "华语电影", "url": "/movie_bt/movie_bt_series/huayudianying/page/{{page}}" },
-      { "name": "欧美电影", "url": "/movie_bt/movie_bt_series/meiguodianying/page/{{page}}" },
-      { "name": "印度电影", "url": "/movie_bt/movie_bt_series/yindudianying/page/{{page}}" }
+      { "name": "电影", "url": "/zuixindianying/page/{{page}}" ,"url2":"/zuixindianying"},
+      { "name": "国产剧", "url": "/gcj/page/{{page}}" ,"url2":"/gcj"},
+      { "name": "美剧", "url": "/meijutt/page/{{page}}" ,"url2":"/meijutt"},
+      { "name": "韩剧", "url": "/hanjutv/page/{{page}}" ,"url2":"/hanjutv"},
+      { "name": "番剧", "url": "/fanju/page/{{page}}" ,"url2":"/fanju"},
+      { "name": "动漫", "url": "/dongmanjuchangban/page/{{page}}","url2":"/dongmanjuchangban" }
     ],
-    "search": {
-      "url": "/daoyongjiek0shibushiyoubing?q={{key}}",
+  "list": {
       "list": ".bt_img.mi_ne_kd li",
       "name": "h3.0@text",
       "tips": ".jidi.0@text",
