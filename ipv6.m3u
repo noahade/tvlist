@@ -16,7 +16,7 @@ http://36.44.157.120:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.cn/tv/CCTV2.png" group-title="央视频道",CCTV-2
 http://110.42.37.69:6688/live/live.php?token=P70V36Ho&id=cctv2
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.cn/tv/CCTV2.png" group-title="央视频道",CCTV-2
-https://migu.188766.xyz/?migutoken=9ea1503d801cbbaf5d06d0320bae9060&id=CCTV2&type=yy
+http://58.223.165.238/pull-hls-f1.douyincdn.com/media/stream-695106910011261612/playlist.m3u8?arch_hrchy=w1&exp_hrchy=w1&keeptime=00093a80&major_anchor_level=common&t_id=037-2026011101435421E0593A183AB3126F7C-7OabFb&wsSecret=923119ec68e1343ce43c3c9412dd143e&wsTime=69628fda&wsSession=ba2153913bd2aeeb64addc88-176807004837181&wsIPSercert=252a1ba7dc630aa84628acc005d3d82a&wsiphost=local&wsBindIP=1&wsHlsSession=197f66bb94708575f3aeb3d944856e7b
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.cn/tv/CCTV2.png" group-title="央视频道",CCTV-2
 http://1.180.2.93:9901/tsfile/live/1035_1.m3u8
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.cn/tv/CCTV2.png" group-title="央视频道",CCTV-2
